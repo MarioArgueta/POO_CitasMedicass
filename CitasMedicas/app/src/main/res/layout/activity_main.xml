@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="117dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Contraseña:"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="228dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtContra"></EditText>
+
+    <EditText
+        android:id="@+id/txtContra"
+        android:layout_width="228dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"></EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Usuario:"
+        android:textSize="20dp"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="345dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="50dp"
+        android:background="#0096eb"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:text="Iniciar sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <Button
+        android:id="@+id/btnregistro"
+        android:layout_width="345dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:text="registrarse"
+        android:background="#0096eb"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fondito"
+        tools:layout_editor_absoluteY="-89dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
