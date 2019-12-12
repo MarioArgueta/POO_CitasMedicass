@@ -5,7 +5,7 @@ class Cita {
     var idCita : Int = 0
     var fecha : String = ""
     var motivo: String = ""
-    var estado : String = ""
+    var estado : String = "    "
     var especialidadMedico : String = ""
     var nombreMedico : String = ""
     var nombrePaciente :String = ""
